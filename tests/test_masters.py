@@ -10,7 +10,9 @@ from bookable.ir import DocIR, Party  # noqa: E402
 from bookable.masters import Masters  # noqa: E402
 from bookable.rules import covers  # noqa: E402
 
-MASTERS = os.environ.get("BOOKABLE_MASTERS", os.path.join(ROOT, "..", "candidate_kit-2", "master_data"))
+MASTERS = os.environ.get("BOOKABLE_MASTERS") or next(
+    (p for p in (os.path.join(ROOT, "master_data"), os.path.join(ROOT, "..", "candidate_kit-2", "master_data"))
+     if os.path.isdir(p)), os.path.join(ROOT, "master_data"))
 
 
 @unittest.skipUnless(os.path.isdir(MASTERS), "master_data folder not found")

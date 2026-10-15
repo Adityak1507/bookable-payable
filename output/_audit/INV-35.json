@@ -1,0 +1,43 @@
+{
+  "file": "INV-35.pdf",
+  "payables": [
+    {
+      "invoice_number": "0248727220",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "30.25",
+      "printed_gross": "30.25",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "30.25",
+          true
+        ],
+        [
+          "none/net",
+          "27.5",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 30.25: 'Balance Due' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax Sales Tax %=∅: no rate printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

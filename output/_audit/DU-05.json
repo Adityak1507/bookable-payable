@@ -1,0 +1,43 @@
+{
+  "file": "DU-05.pdf",
+  "payables": [
+    {
+      "invoice_number": "7363916",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": true,
+      "booked": "771.66",
+      "printed_gross": "771.66",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "771.66",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 771.66: no total printed; owed amount = sum of the printed line totals (inferred, no tax stated)"
+      ],
+      "facts": [
+        {
+          "kind": "scale",
+          "message": "line 0: price is per 100 units (qty × price / 100 = printed total)",
+          "field": "line_items[0].unit_price"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_90: terms text '90 days net'",
+        "po_id=∅: PO not in master"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

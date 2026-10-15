@@ -1,0 +1,42 @@
+{
+  "file": "INV-31.pdf",
+  "payables": [
+    {
+      "invoice_number": "39015",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "17657.53",
+      "printed_gross": "17657.53",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "17657.53",
+          true
+        ]
+      ],
+      "notes": [
+        "pages [2, 3] support the invoice (it adds up without them); their amounts are not added",
+        "gross 17657.53: '200 Stevens Drive Amount Due:' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Immediate: due date is invoice date + 0 days",
+        "po_id=∅: PO not in master"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "text-layer",
+    "2": "text-layer",
+    "3": "text-layer"
+  }
+}

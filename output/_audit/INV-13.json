@@ -1,0 +1,66 @@
+{
+  "file": "INV-13.pdf",
+  "payables": [
+    {
+      "invoice_number": "1410",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "152587.46",
+      "printed_gross": "152587.46",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "152587.47",
+          false
+        ],
+        [
+          "header/net",
+          "152587.46",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "127564.34",
+          false
+        ],
+        [
+          "none/net",
+          "127564.34",
+          false
+        ]
+      ],
+      "notes": [
+        "'KM 25023.12' is the total of the rated taxes, not another tax",
+        "gross 152587.46: 'Tasuda (EUR):' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "VAT 24% is computed on printed base, so its printed amount is given explicitly",
+          "field": "taxes[1].tax_amount"
+        },
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 152587.47, printed gross 152587.46 (delta 0.01)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "payment_term_id=Net_30: 30 days in terms text",
+        "po_id=∅: no PO printed",
+        "tax VAT 0%=EST_000_VAT: Estonian VAT 0% / exempt (country EE)",
+        "tax VAT 24%=EST_240_VAT: Estonian VAT 24% (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

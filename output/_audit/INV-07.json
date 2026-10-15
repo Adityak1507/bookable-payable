@@ -1,0 +1,48 @@
+{
+  "file": "INV-07.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "6620.55",
+      "printed_gross": "6620.55",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "6620.55",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "4047.0",
+          false
+        ],
+        [
+          "none/net",
+          "4047.0",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 6620.55: 'AMOUNT DUE ZAR' = lines + their line taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no unique term for 31 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 15%=ZAF_150_VAT: South Africa VAT 15% (country ZA)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

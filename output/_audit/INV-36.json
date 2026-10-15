@@ -1,0 +1,59 @@
+{
+  "file": "INV-36.pdf",
+  "payables": [
+    {
+      "invoice_number": "44273107",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "91580.5",
+      "printed_gross": "91580.50",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "92496.31",
+          false
+        ],
+        [
+          "header/net",
+          "91580.5",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "91580.5",
+          false
+        ],
+        [
+          "none/net",
+          "91580.5",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 91580.50: 'TOTAL(USD)' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 92496.31, printed gross 91580.50 (delta 915.81)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_30: 30 days in terms text",
+        "po_id=∅: no PO printed",
+        "tax TAX %=∅: no rate printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "text-layer"
+  }
+}

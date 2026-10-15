@@ -1,0 +1,53 @@
+{
+  "file": "INV-09.pdf",
+  "payables": [
+    {
+      "invoice_number": "11768395",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "37767.32",
+      "printed_gross": "37767.32",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "37767.32",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "37767.32",
+          true
+        ],
+        [
+          "none/net",
+          "37767.32",
+          true
+        ]
+      ],
+      "notes": [
+        "pages [2] restate the document in ['CNY']; the payable is in EUR",
+        "gross 37767.32: 'Kokku Total' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "supplier: 'Northwind Operations OÜ' is printed in the buyer's address block; supplier name left blank (no other company on the page)",
+        "payment_term_id=Net_21: due date is invoice date + 21 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 0%=EST_000_VAT: Estonian VAT 0% / exempt (country EE)",
+        "tax VAT 0%=EST_000_VAT: Estonian VAT 0% / exempt (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

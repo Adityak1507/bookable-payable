@@ -1,0 +1,47 @@
+{
+  "file": "INV-34.pdf",
+  "payables": [
+    {
+      "invoice_number": "I220-127612",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "572.0",
+      "printed_gross": "572.00",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "572.0",
+          true
+        ],
+        [
+          "none/net",
+          "520.0",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 572.00: 'Total Due:' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_7: due date is invoice date + 7 days",
+        "po_id=∅: no PO printed",
+        "tax GST %=∅: no rate printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "text-layer",
+    "2": "text-layer",
+    "3": "text-layer"
+  }
+}

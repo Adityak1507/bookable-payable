@@ -1,0 +1,49 @@
+{
+  "file": "INV-01.pdf",
+  "payables": [
+    {
+      "invoice_number": "852566",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "438.0",
+      "printed_gross": "438.00",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "438.0",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "438.0",
+          true
+        ],
+        [
+          "none/net",
+          "438.0",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 438.00: 'Liefer-/Leistungsdatum: Zeitraum von 01.01.2026 bis 31.01.2026 Gesamtsumme' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "supplier: 'Northwind Operations OÜ' is printed in the buyer's address block; supplier name left blank (no other company on the page)",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax zzgl. MwSt 0%=DE_000_RC: German Reverse Charge 0% (country DE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

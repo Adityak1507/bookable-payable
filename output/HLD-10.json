@@ -1,0 +1,82 @@
+{
+  "file": "HLD-10.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "invoice_date": "2026-05-05",
+      "due_date": "",
+      "invoice_type": "INVOICE",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind Operations OU",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": ""
+      },
+      "buyer": {
+        "company_code": "",
+        "business_unit_code": "",
+        "location_code": ""
+      },
+      "payment_term_id": "",
+      "po_number": "",
+      "po_id": "",
+      "gross_total": "254.52",
+      "subtotal": "96.73",
+      "total_tax_amount": "",
+      "discount_amount": "",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [],
+      "line_items": [
+        {
+          "description": "STK-EE003-26-00182 05-05-26 WAW, OSL, B BB",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "65.26",
+          "total": "65.26",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "Northwind OU CWH Northwing ou FUEL",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "30.67",
+          "total": "30.67",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "Clara Haas Lena Meyer nondoc PLUS- B Lindenstrasse 20 CWH Market Road 67 PL-01-940, Warsaw NO-0196,",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "0.8",
+          "total": "0.80",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        }
+      ]
+    }
+  ],
+  "declined": [
+    {
+      "doc_type": "OTHER",
+      "reason": "page(s) 1: no payable content recognised on these pages"
+    }
+  ]
+}

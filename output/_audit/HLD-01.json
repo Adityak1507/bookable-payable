@@ -1,0 +1,60 @@
+{
+  "file": "HLD-01.pdf",
+  "payables": [
+    {
+      "invoice_number": "SI6675/02/467",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "8161.92",
+      "printed_gross": "8161.92",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "8161.92",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "7612.56",
+          false
+        ],
+        [
+          "none/net",
+          "7848.0",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 8161.92: '(OTAL PAYMEN)' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "Vat 7% is computed on net + charges, so its printed amount is given explicitly",
+          "field": "taxes[0].tax_amount"
+        },
+        {
+          "kind": "tax_base",
+          "message": "WITHOLDING TA 3% is computed on net + charges, so its printed amount is given explicitly",
+          "field": "taxes[1].tax_amount"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax Vat 7%=TH_070_VAT: Thailand VAT 7% (country TH)",
+        "tax WITHOLDING TA 3%=∅: 0 candidates for WITHOLDING TA 3% TH"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

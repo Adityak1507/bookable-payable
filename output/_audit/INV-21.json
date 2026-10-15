@@ -1,0 +1,54 @@
+{
+  "file": "INV-21.pdf",
+  "payables": [
+    {
+      "invoice_number": "9884313366",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "535.79",
+      "printed_gross": "535.79",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "537.7",
+          false
+        ],
+        [
+          "header/net",
+          "535.79",
+          true
+        ],
+        [
+          "none/net",
+          "435.6",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 535.79: 'TOTAL A PAGAR' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 537.7, printed gross 535.79 (delta 1.91)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax Até dia 06/05/2026 IVA %=∅: no rate printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

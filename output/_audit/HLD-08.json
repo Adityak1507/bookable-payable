@@ -1,0 +1,53 @@
+{
+  "file": "HLD-08.pdf",
+  "payables": [
+    {
+      "invoice_number": "162547",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "148941.47",
+      "printed_gross": "148941.47",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "148941.47",
+          true
+        ],
+        [
+          "header/net",
+          "148941.47",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "129514.32",
+          false
+        ],
+        [
+          "none/net",
+          "129514.32",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 148941.47: 'Signed Date Total' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: PO not in master",
+        "tax VAT 15%=ZAF_150_VAT: South Africa VAT 15% (country ZA)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

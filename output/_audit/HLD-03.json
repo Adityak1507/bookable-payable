@@ -1,0 +1,59 @@
+{
+  "file": "HLD-03.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "67.25",
+      "printed_gross": "67.25",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "67.54",
+          false
+        ],
+        [
+          "header/net",
+          "67.25",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "59.51",
+          false
+        ],
+        [
+          "none/net",
+          "59.51",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 67.25: '05 SWIFT: CTQEBXFM Os bens desta Factura/GR foram colocados à disposição na data da factura Total da factura' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 67.54, printed gross 67.25 (delta 0.29)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_30: due date is invoice date + 30 days",
+        "po_id=∅: no PO printed",
+        "tax IVA %=∅: no rate printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

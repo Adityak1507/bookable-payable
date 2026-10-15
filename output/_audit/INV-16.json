@@ -1,0 +1,44 @@
+{
+  "file": "INV-16.pdf",
+  "payables": [
+    {
+      "invoice_number": "TLLIR72836045",
+      "pages": [
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "26.47",
+      "printed_gross": "26.47",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "26.47",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 26.47: 'Kokku: EUR:' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "line_mismatch",
+          "message": "line 0: qty × price ≠ printed total (1.00 vs 23.02)",
+          "field": "line_items[0]"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

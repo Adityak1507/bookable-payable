@@ -1,0 +1,48 @@
+{
+  "file": "INV-10.pdf",
+  "payables": [
+    {
+      "invoice_number": "18533",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "594.3",
+      "printed_gross": "594.30",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "594.3",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "479.27",
+          false
+        ],
+        [
+          "none/net",
+          "479.27",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 594.30: 'Tasuda:' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax Summa sõnadega: Käibemaks 24%=EST_240_VAT: Estonian VAT 24% (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "file": "INV-03.pdf",
+  "payables": [
+    {
+      "invoice_number": "INV-75162461",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "8550.0",
+      "printed_gross": "8550.00",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "8550.0",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "7434.78",
+          false
+        ],
+        [
+          "none/net",
+          "7434.78",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 8550.00: 'TOTAL ZAR' = lines + their line taxes + charges − discount",
+        "invoice number INV-75162461 taken from the remittance slip for the same amount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_14: due date is invoice date + 14 days",
+        "po_id=∅: PO not in master",
+        "tax VAT 15%=ZAF_150_VAT: South Africa VAT 15% (country ZA)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

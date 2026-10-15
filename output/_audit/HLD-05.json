@@ -1,0 +1,79 @@
+{
+  "file": "HLD-05.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": false,
+      "gross_inferred": false,
+      "booked": "2311.39",
+      "printed_gross": "1012.14",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "2311.39",
+          false
+        ],
+        [
+          "header/net",
+          "2113.34",
+          false
+        ],
+        [
+          "none/net",
+          "1936.47",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 1012.14: 'Sub-Total c/ IVA:' (label only; components do not add up to any printed total)"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "IVA 13% × net ≠ printed 19.82; base not provable from the page",
+          "field": "taxes[1]"
+        },
+        {
+          "kind": "tax_base",
+          "message": "IVA 23% × net ≠ printed 157.05; base not provable from the page",
+          "field": "taxes[2]"
+        },
+        {
+          "kind": "unreconciled",
+          "message": "no ERP structure books the printed gross: best faithful structure line/net books 2311.39, document says 1012.14 (delta 1299.25)",
+          "field": "gross_total"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax Retenção %=∅: no rate printed",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 13%=PT_130_IVA: Portugal IVA 13% (country PT)",
+        "tax VAT 13%=PT_130_IVA: Portugal IVA 13% (country PT)",
+        "tax VAT 13%=PT_130_IVA: Portugal IVA 13% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)"
+      ]
+    }
+  ],
+  "notes": [
+    "PP-OCR at 300 dpi re-read of pages [1, 2] did not improve; primary reading kept"
+  ],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

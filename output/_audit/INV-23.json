@@ -1,0 +1,13 @@
+{
+  "file": "INV-23.pdf",
+  "payables": [],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr",
+    "3": "pp-ocr",
+    "4": "pp-ocr",
+    "5": "pp-ocr",
+    "6": "pp-ocr"
+  }
+}

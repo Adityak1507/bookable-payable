@@ -1,0 +1,575 @@
+{
+ "DU-02": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "37534.94",
+    "currency": "EUR",
+    "gross": "37534.94",
+    "invoice_type": "INVOICE",
+    "lines": 21,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "DU-03": {
+  "declined": [
+   "WAYBILL"
+  ],
+  "payables": [
+   {
+    "booked": "1040.06",
+    "currency": "USD",
+    "gross": "1040.06",
+    "invoice_type": "INVOICE",
+    "lines": 10,
+    "reconciled": true,
+    "structure": "header/net"
+   },
+   {
+    "booked": "4499.0",
+    "currency": "EUR",
+    "gross": "4499.00",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "DU-05": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "771.66",
+    "currency": "SGD",
+    "gross": "771.66",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "DU-05s": {
+  "declined": [
+   "DELIVERY_NOTE"
+  ],
+  "payables": []
+ },
+ "DU-06": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "153.58",
+    "currency": "EUR",
+    "gross": "153.58",
+    "invoice_type": "INVOICE",
+    "lines": 5,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "DU-08": {
+  "declined": [
+   "DUNNING"
+  ],
+  "payables": []
+ },
+ "DU-09": {
+  "declined": [
+   "OTHER"
+  ],
+  "payables": []
+ },
+ "DU-10": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "5076.17",
+    "currency": "GBP",
+    "gross": "5076.17",
+    "invoice_type": "CREDIT_MEMO",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "DU-11": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "400.0",
+    "currency": "EUR",
+    "gross": "400.00",
+    "invoice_type": "CREDIT_MEMO",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "HLD-01": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "8161.92",
+    "currency": "THB",
+    "gross": "8161.92",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "HLD-03": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "67.25",
+    "currency": "EUR",
+    "gross": "67.25",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "HLD-05": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "2311.39",
+    "currency": "",
+    "gross": "1012.14",
+    "invoice_type": "INVOICE",
+    "lines": 13,
+    "reconciled": false,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "HLD-08": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "148941.47",
+    "currency": "ZAR",
+    "gross": "148941.47",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "HLD-10": {
+  "declined": [
+   "OTHER"
+  ],
+  "payables": [
+   {
+    "booked": "96.73",
+    "currency": "EUR",
+    "gross": "254.52",
+    "invoice_type": "INVOICE",
+    "lines": 3,
+    "reconciled": false,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-01": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "438.0",
+    "currency": "EUR",
+    "gross": "438.00",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-02": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "608.23",
+    "currency": "EUR",
+    "gross": "608.23",
+    "invoice_type": "INVOICE",
+    "lines": 8,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-03": {
+  "declined": [
+   "REMITTANCE"
+  ],
+  "payables": [
+   {
+    "booked": "8550.0",
+    "currency": "ZAR",
+    "gross": "8550.00",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-04": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "6620.55",
+    "currency": "ZAR",
+    "gross": "6620.55",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-06": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "1683.98",
+    "currency": "",
+    "gross": "1683.98",
+    "invoice_type": "INVOICE",
+    "lines": 26,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-07": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "6620.55",
+    "currency": "ZAR",
+    "gross": "6620.55",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-09": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "37767.32",
+    "currency": "EUR",
+    "gross": "37767.32",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-10": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "594.3",
+    "currency": "",
+    "gross": "594.30",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-11": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "83.21",
+    "currency": "EUR",
+    "gross": "83.21",
+    "invoice_type": "INVOICE",
+    "lines": 4,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-13": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "152587.46",
+    "currency": "EUR",
+    "gross": "152587.46",
+    "invoice_type": "INVOICE",
+    "lines": 25,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-14": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "29253.72",
+    "currency": "GBP",
+    "gross": "29253.72",
+    "invoice_type": "INVOICE",
+    "lines": 3,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-15": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "29253.72",
+    "currency": "GBP",
+    "gross": "29253.72",
+    "invoice_type": "INVOICE",
+    "lines": 3,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-16": {
+  "declined": [
+   "OTHER"
+  ],
+  "payables": [
+   {
+    "booked": "26.47",
+    "currency": "EUR",
+    "gross": "26.47",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-19": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "8045.4",
+    "currency": "GHS",
+    "gross": "8045.40",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-20": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "12.1",
+    "currency": "CHF",
+    "gross": "12.10",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "line/net"
+   }
+  ]
+ },
+ "INV-21": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "535.79",
+    "currency": "EUR",
+    "gross": "535.79",
+    "invoice_type": "INVOICE",
+    "lines": 6,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-23": {
+  "declined": [
+   "ORDER"
+  ],
+  "payables": []
+ },
+ "INV-25": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "176.0",
+    "currency": "EUR",
+    "gross": "176.00",
+    "invoice_type": "INVOICE",
+    "lines": 3,
+    "reconciled": true,
+    "structure": "inclusive_line/inclusive"
+   }
+  ]
+ },
+ "INV-26": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "846.13",
+    "currency": "MYR",
+    "gross": "873.53",
+    "invoice_type": "INVOICE",
+    "lines": 34,
+    "reconciled": false,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-27": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "70654.3",
+    "currency": "KES",
+    "gross": "70654.30",
+    "invoice_type": "INVOICE",
+    "lines": 7,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-28": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "4478.2",
+    "currency": "DKK",
+    "gross": "4478.20",
+    "invoice_type": "INVOICE",
+    "lines": 15,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-31": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "17657.53",
+    "currency": "",
+    "gross": "17657.53",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-32": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "750.0",
+    "currency": "",
+    "gross": "750.00",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-33": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "250.0",
+    "currency": "SGD",
+    "gross": "250.00",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "none/net"
+   }
+  ]
+ },
+ "INV-34": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "572.0",
+    "currency": "",
+    "gross": "572.00",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-35": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "30.25",
+    "currency": "USD",
+    "gross": "30.25",
+    "invoice_type": "INVOICE",
+    "lines": 4,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-36": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "91580.5",
+    "currency": "USD",
+    "gross": "91580.50",
+    "invoice_type": "INVOICE",
+    "lines": 1,
+    "reconciled": true,
+    "structure": "header/net"
+   }
+  ]
+ },
+ "INV-37": {
+  "declined": [],
+  "payables": [
+   {
+    "booked": "112.62",
+    "currency": "",
+    "gross": "2487.73",
+    "invoice_type": "INVOICE",
+    "lines": 2,
+    "reconciled": false,
+    "structure": "header/net"
+   }
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+  "file": "INV-02.pdf",
+  "payables": [
+    {
+      "invoice_number": "9972-907",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "608.23",
+      "printed_gross": "608.23",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "608.23",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "490.5",
+          false
+        ],
+        [
+          "none/net",
+          "490.51",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 608.23: 'Summa koos käibemaksuga' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001",
+        "supplier: 'Northwind Technology OÜ' is printed in the buyer's address block; supplier name left blank (no other company on the page)",
+        "payment_term_id=Net_14: due date is invoice date + 14 days",
+        "po_id=∅: PO not in master",
+        "tax Käibemaks 24%=EST_240_VAT: Estonian VAT 24% (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

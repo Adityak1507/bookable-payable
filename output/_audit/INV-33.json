@@ -1,0 +1,37 @@
+{
+  "file": "INV-33.pdf",
+  "payables": [
+    {
+      "invoice_number": "ADIPL/INV/070/17",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "250.0",
+      "printed_gross": "250.00",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "250.0",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 250.00: '* Please kindly endorse and scan via email back to us once you have received this Irvoice. Thank you. Total' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

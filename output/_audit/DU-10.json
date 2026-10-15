@@ -1,0 +1,54 @@
+{
+  "file": "DU-10.pdf",
+  "payables": [
+    {
+      "invoice_number": "5900366703",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "5076.17",
+      "printed_gross": "5076.17",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "5076.17",
+          true
+        ],
+        [
+          "header/net",
+          "5076.17",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "4230.14",
+          false
+        ],
+        [
+          "none/net",
+          "4230.14",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 5076.17: 'Total Amount GBP' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_30: terms text 'Within 30 days of invoice date'",
+        "po_id=∅: no PO printed",
+        "tax VAT 20%=GB_200_VAT: UK VAT 20% (country GB)",
+        "tax VAT 20%=GB_200_VAT: UK VAT 20% (country GB)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

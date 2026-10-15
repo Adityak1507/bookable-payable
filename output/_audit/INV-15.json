@@ -1,0 +1,60 @@
+{
+  "file": "INV-15.pdf",
+  "payables": [
+    {
+      "invoice_number": "INV-8935",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "29253.72",
+      "printed_gross": "29253.72",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "29253.72",
+          true
+        ],
+        [
+          "header/net",
+          "29253.72",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "26042.68",
+          false
+        ],
+        [
+          "none/net",
+          "26042.68",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 29253.72: 'Amount Due GBP' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "Total VAT 20% × net ≠ printed 3211.04; base not provable from the page",
+          "field": "taxes[0]"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no unique term for 29 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 20%=GB_200_VAT: UK VAT 20% (country GB)",
+        "tax VAT 20%=GB_200_VAT: UK VAT 20% (country GB)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

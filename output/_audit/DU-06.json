@@ -1,0 +1,72 @@
+{
+  "file": "DU-06.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "153.58",
+      "printed_gross": "153.58",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "153.59",
+          false
+        ],
+        [
+          "header/net",
+          "153.58",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "138.2",
+          false
+        ],
+        [
+          "none/net",
+          "138.2",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 153.58: 'TOTAL' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "VAT 23% is computed on printed base, so its printed amount is given explicitly",
+          "field": "taxes[0].tax_amount"
+        },
+        {
+          "kind": "tax_base",
+          "message": "VAT 6% is computed on printed base, so its printed amount is given explicitly",
+          "field": "taxes[1].tax_amount"
+        },
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 153.59, printed gross 153.58 (delta 0.01)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no unique term for 31 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 6%=PT_060_IVA: Portugal IVA 6% (country PT)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

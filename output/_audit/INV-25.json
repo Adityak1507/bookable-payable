@@ -1,0 +1,72 @@
+{
+  "file": "INV-25.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "176.0",
+      "printed_gross": "176.00",
+      "structure": "inclusive_line/inclusive",
+      "alternatives": [
+        [
+          "line/net",
+          "216.48",
+          false
+        ],
+        [
+          "header/net",
+          "208.91",
+          false
+        ],
+        [
+          "inclusive_line/inclusive",
+          "176.0",
+          true
+        ],
+        [
+          "none/net",
+          "176.0",
+          true
+        ]
+      ],
+      "notes": [
+        "page 2 repeats the line items of an earlier page: second copy, not added",
+        "gross 176.00: 'Local de Carga: N/INSTALACOES Total' = lines + charges − discount (tax-inclusive prices)",
+        "printed lines already add up to the gross: prices include the stated tax"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "VAT 23% is computed on printed base, so its printed amount is given explicitly",
+          "field": "taxes[0].tax_amount"
+        },
+        {
+          "kind": "choice",
+          "message": "chose inclusive_line/inclusive: line-level taxes book 216.48, printed gross 176.00 (delta 40.48)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax VAT 0%=∅: 0 candidates for VAT 0% PT",
+        "tax VAT 0%=∅: 0 candidates for VAT 0% PT",
+        "tax VAT 0%=∅: 0 candidates for VAT 0% PT",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)",
+        "tax VAT 23%=PT_230_IVA: Portugal IVA 23% (country PT)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

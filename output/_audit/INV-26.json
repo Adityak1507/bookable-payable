@@ -1,0 +1,47 @@
+{
+  "file": "INV-26.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": false,
+      "gross_inferred": false,
+      "booked": "846.13",
+      "printed_gross": "873.53",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "846.13",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 873.53: 'Total Incl. SST' (label only; components do not add up to any printed total)"
+      ],
+      "facts": [
+        {
+          "kind": "unreconciled",
+          "message": "no ERP structure books the printed gross: best faithful structure none/net books 846.13, document says 873.53 (delta -27.40)",
+          "field": "gross_total"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed"
+      ]
+    }
+  ],
+  "notes": [
+    "PP-OCR at 300 dpi re-read of pages [1, 2] did not improve; primary reading kept"
+  ],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

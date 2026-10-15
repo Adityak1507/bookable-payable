@@ -1,0 +1,59 @@
+{
+  "file": "DU-11.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "400.0",
+      "printed_gross": "400.00",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "400.0",
+          true
+        ],
+        [
+          "header/net",
+          "400.0",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "327.86",
+          false
+        ],
+        [
+          "none/net",
+          "327.87",
+          false
+        ]
+      ],
+      "notes": [
+        "gross -400.00: 'Arve kokku (EUR)' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "sign",
+          "message": "printed gross is negative: credit delivered as positive magnitudes",
+          "field": "gross_total"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "payment_term_id=Immediate: due date is invoice date + 0 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 22%=EST_220_VAT: Estonian VAT 22% (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "file": "INV-11.pdf",
+  "payables": [
+    {
+      "invoice_number": "18109293",
+      "invoice_date": "2026-04-07",
+      "due_date": "",
+      "invoice_type": "INVOICE",
+      "currency": "EUR",
+      "supplier": {
+        "name": "",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": "EE063536009"
+      },
+      "buyer": {
+        "company_code": "BOLTGROUP",
+        "business_unit_code": "",
+        "location_code": "LOC_EE_001"
+      },
+      "payment_term_id": "",
+      "po_number": "",
+      "po_id": "",
+      "gross_total": "83.21",
+      "subtotal": "",
+      "total_tax_amount": "",
+      "discount_amount": "",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [],
+      "line_items": [
+        {
+          "description": "408 AGREED PICKUP FEE",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "5",
+          "total": "5.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": [
+            {
+              "tax_type": "VAT",
+              "tax_name": "VAT",
+              "tax_rate": "24",
+              "tax_amount": "",
+              "tax_type_code": "EST_240_VAT"
+            }
+          ]
+        },
+        {
+          "description": "551 TARNEKULUD",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "53.4",
+          "total": "53.40",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": [
+            {
+              "tax_type": "VAT",
+              "tax_name": "VAT",
+              "tax_rate": "24",
+              "tax_amount": "",
+              "tax_type_code": "EST_240_VAT"
+            }
+          ]
+        },
+        {
+          "description": "aud 805 AGREED DELIVERY FEE",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "5",
+          "total": "5.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": [
+            {
+              "tax_type": "VAT",
+              "tax_name": "VAT",
+              "tax_rate": "24",
+              "tax_amount": "",
+              "tax_type_code": "EST_240_VAT"
+            }
+          ]
+        },
+        {
+          "description": "e of 920 BAF6,93% (16.03-29.03)",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "3.7",
+          "total": "3.70",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": [
+            {
+              "tax_type": "VAT",
+              "tax_name": "VAT",
+              "tax_rate": "24",
+              "tax_amount": "",
+              "tax_type_code": "EST_240_VAT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "declined": []
+}

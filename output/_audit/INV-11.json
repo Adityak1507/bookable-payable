@@ -1,0 +1,57 @@
+{
+  "file": "INV-11.pdf",
+  "payables": [
+    {
+      "invoice_number": "18109293",
+      "pages": [
+        1
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "83.21",
+      "printed_gross": "83.21",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "83.21",
+          true
+        ],
+        [
+          "header/net",
+          "83.21",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "67.09",
+          false
+        ],
+        [
+          "none/net",
+          "67.1",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 83.21: an unlabelled printed amount equals lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: invoice-to address of LOC_EE_001; business unit ambiguous, left blank",
+        "supplier: 'Northwind Operations OÜ S?o Jo?o da Talh' is printed in the buyer's address block; supplier name left blank (no other company on the page)",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax VAT 24%=EST_240_VAT: Estonian VAT 24% (country EE)",
+        "tax VAT 24%=EST_240_VAT: Estonian VAT 24% (country EE)",
+        "tax VAT 24%=EST_240_VAT: Estonian VAT 24% (country EE)",
+        "tax VAT 24%=EST_240_VAT: Estonian VAT 24% (country EE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr"
+  }
+}

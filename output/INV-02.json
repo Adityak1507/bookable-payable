@@ -1,0 +1,150 @@
+{
+  "file": "INV-02.pdf",
+  "payables": [
+    {
+      "invoice_number": "9972-907",
+      "invoice_date": "2026-03-18",
+      "due_date": "2026-04-01",
+      "invoice_type": "INVOICE",
+      "currency": "EUR",
+      "supplier": {
+        "name": "",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": ""
+      },
+      "buyer": {
+        "company_code": "BOLTGROUP",
+        "business_unit_code": "EE001",
+        "location_code": "LOC_EE_001"
+      },
+      "payment_term_id": "Net_14",
+      "po_number": "2287",
+      "po_id": "",
+      "gross_total": "608.23",
+      "subtotal": "538.60",
+      "total_tax_amount": "117.72",
+      "discount_amount": "48.09",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [
+        {
+          "tax_type": "VAT",
+          "tax_name": "Käibemaks",
+          "tax_rate": "24",
+          "tax_amount": "117.72",
+          "tax_type_code": "EST_240_VAT"
+        }
+      ],
+      "line_items": [
+        {
+          "description": "9x Led Bar FOS Luminus BAR",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "9",
+          "unit_price": "6",
+          "total": "54.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "1x Meremiin ADJ Starburst",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "1",
+          "unit_price": "10",
+          "total": "10.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "2x Pioneer CDJ-3000",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "2",
+          "unit_price": "45",
+          "total": "90.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "1x Pioneer DJM-900 NXS2 mixer",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "1",
+          "unit_price": "45",
+          "total": "45.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "1x DJ laud 2m x 0,5m h=1m Kaasas must seelik",
+          "item_type": "",
+          "uom": "päev",
+          "quantity": "1",
+          "unit_price": "18",
+          "total": "18.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "1x Aktiivkõlar Veritas 8000 komplekt",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "1",
+          "unit_price": "103.6",
+          "total": "103.60",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "1x Linnasisene transport Fikseeritud",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "50",
+          "total": "50.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "2x Tehnik",
+          "item_type": "",
+          "uom": "tundi",
+          "quantity": "2",
+          "unit_price": "84",
+          "total": "168.00",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        }
+      ]
+    }
+  ],
+  "declined": []
+}

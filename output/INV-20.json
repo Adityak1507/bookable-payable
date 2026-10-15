@@ -1,0 +1,59 @@
+{
+  "file": "INV-20.pdf",
+  "payables": [
+    {
+      "invoice_number": "20423591",
+      "invoice_date": "2026-02-16",
+      "due_date": "2026-03-08",
+      "invoice_type": "INVOICE",
+      "currency": "CHF",
+      "supplier": {
+        "name": "Fairmont Technologies AG",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": ""
+      },
+      "buyer": {
+        "company_code": "",
+        "business_unit_code": "",
+        "location_code": ""
+      },
+      "payment_term_id": "",
+      "po_number": "",
+      "po_id": "",
+      "gross_total": "12.10",
+      "subtotal": "",
+      "total_tax_amount": "",
+      "discount_amount": "",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [],
+      "line_items": [
+        {
+          "description": "King King Tony Cap 1/2 & quot Torx tip with T45x60mm 35605506 16.02.2026 hole 24 Months Warranty (2/16/2026 - 2/16/2028)",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "11.19",
+          "total": "11.19",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": [
+            {
+              "tax_type": "VAT",
+              "tax_name": "VAT",
+              "tax_rate": "8.1",
+              "tax_amount": "",
+              "tax_type_code": "CH_081_VAT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "declined": []
+}

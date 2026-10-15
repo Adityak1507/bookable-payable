@@ -1,0 +1,6 @@
+# CPU runtime (what the Dockerfile installs). The core (solve, masters, erp.py) is stdlib only.
+pymupdf==1.28.2
+pillow==12.3.0
+numpy==2.5.2
+rapidocr==3.10.0          # PP-OCR detection + recognition models
+onnxruntime==1.31.0       # CPU inference backend for RapidOCR (no PyTorch needed)

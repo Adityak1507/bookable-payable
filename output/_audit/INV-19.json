@@ -1,0 +1,54 @@
+{
+  "file": "INV-19.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "8045.4",
+      "printed_gross": "8045.40",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "8045.4",
+          true
+        ],
+        [
+          "none/net",
+          "6600.0",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 8045.40: '(vii) Total Tax Inclusive Value (v+vi)' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "tax_base",
+          "message": "VAT 15% is computed on net + other levies, so its printed amount is given explicitly",
+          "field": "taxes[3].tax_amount"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed",
+        "tax NHIL 2.5%=TAX028: Ghana NHIL 2.5% (country GH)",
+        "tax GETFund Levy 2.5%=TAX029: Ghana GETFund 2.5% (country GH)",
+        "tax COVID-19 Levy 1%=TAX030: Ghana COVID-19 Levy 1% (country GH)",
+        "tax VAT 15%=TAX024: Ghana VAT 15% (country GH)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

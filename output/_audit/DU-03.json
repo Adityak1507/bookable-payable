@@ -1,0 +1,98 @@
+{
+  "file": "DU-03.pdf",
+  "payables": [
+    {
+      "invoice_number": "KL835",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "1040.06",
+      "printed_gross": "1040.06",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "1040.06",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "1040.06",
+          true
+        ],
+        [
+          "none/net",
+          "1040.06",
+          true
+        ]
+      ],
+      "notes": [
+        "pages [4, 5] restate the document in ['SGD']; the payable is in USD",
+        "gross 1040.06: 'Amount Due' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_60: terms text '60 Days Net'",
+        "po_id=∅: no PO printed",
+        "tax GST 0%=SG_000_GST: Singapore GST 0% / zero-rated (unique rate)"
+      ]
+    },
+    {
+      "invoice_number": "",
+      "pages": [
+        12
+      ],
+      "reconciled": true,
+      "gross_inferred": true,
+      "booked": "4499.0",
+      "printed_gross": "4499.00",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "4499.0",
+          true
+        ]
+      ],
+      "notes": [
+        "gross 4499.00: no total printed; owed amount = sum of the printed line totals (inferred, no tax stated)"
+      ],
+      "facts": [
+        {
+          "kind": "line_mismatch",
+          "message": "line 0: qty × price ≠ printed total (8.18 vs 4499.00)",
+          "field": "line_items[0]"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr",
+    "3": "pp-ocr",
+    "4": "pp-ocr",
+    "5": "pp-ocr",
+    "6": "pp-ocr",
+    "7": "pp-ocr",
+    "8": "pp-ocr",
+    "9": "pp-ocr",
+    "10": "pp-ocr",
+    "11": "pp-ocr",
+    "12": "pp-ocr"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "file": "INV-28.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "4478.2",
+      "printed_gross": "4478.20",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "line/net",
+          "4478.21",
+          false
+        ],
+        [
+          "header/net",
+          "4478.2",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "3582.56",
+          false
+        ],
+        [
+          "none/net",
+          "3582.56",
+          false
+        ]
+      ],
+      "notes": [
+        "page 3 restates lines already billed (specification); lines not added",
+        "gross 4478.20: 'I alt DKK inkl. moms'' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "choice",
+          "message": "chose header/net: line-level taxes book 4478.21, printed gross 4478.20 (delta 0.01)",
+          "field": ""
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_30: due date is invoice date + 30 days",
+        "po_id=∅: no PO printed",
+        "tax moms 25%=DK_250_VAT: Denmark VAT 25% (country DK)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr",
+    "3": "pp-ocr"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "file": "INV-27.pdf",
+  "payables": [
+    {
+      "invoice_number": "",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "70654.3",
+      "printed_gross": "70654.30",
+      "structure": "header/net",
+      "alternatives": [
+        [
+          "header/net",
+          "70654.3",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "60908.87",
+          false
+        ],
+        [
+          "none/net",
+          "60908.88",
+          false
+        ]
+      ],
+      "notes": [
+        "'TAX 9745.42' is the total of the rated taxes, not another tax",
+        "gross 70654.30: 'TOTAL DUE' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=Net_30: due date is invoice date + 30 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 16%=KEN_160_VAT: Kenya VAT 16% (country KE)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

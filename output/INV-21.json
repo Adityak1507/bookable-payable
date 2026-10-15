@@ -1,0 +1,124 @@
+{
+  "file": "INV-21.pdf",
+  "payables": [
+    {
+      "invoice_number": "9884313366",
+      "invoice_date": "",
+      "due_date": "2026-05-06",
+      "invoice_type": "INVOICE",
+      "currency": "EUR",
+      "supplier": {
+        "name": "",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": ""
+      },
+      "buyer": {
+        "company_code": "",
+        "business_unit_code": "",
+        "location_code": ""
+      },
+      "payment_term_id": "",
+      "po_number": "",
+      "po_id": "",
+      "gross_total": "535.79",
+      "subtotal": "",
+      "total_tax_amount": "",
+      "discount_amount": "",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [
+        {
+          "tax_type": "",
+          "tax_name": "Até dia 06/05/2026 IVA",
+          "tax_rate": "",
+          "tax_amount": "100.19",
+          "tax_type_code": ""
+        }
+      ],
+      "line_items": [
+        {
+          "description": "5601126039575 12422850 SICAL SUPER BAR Cafe Grao 6x1kg N1PT",
+          "item_type": "",
+          "uom": "",
+          "quantity": "24",
+          "unit_price": "34.69",
+          "total": "407.95",
+          "discount": "",
+          "discount_percentage": "51",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "Desconto em Valor BEVERAGES SOLUTIONS",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "-8.3",
+          "total": "-8.30",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "8445291766662 12616271 Vireo Chocolate Quente 12(25x20g) N1",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "10.01",
+          "total": "10.01",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "8445291894877 12624778 NESCAFE Acucar Std 1x2.8kg PT",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "8.3",
+          "total": "8.30",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "054881000024 14181244 AHMAD Inf MentaHrtLim 6(20x1,5g)N1PT",
+          "item_type": "",
+          "uom": "",
+          "quantity": "3",
+          "unit_price": "2.94",
+          "total": "8.82",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "054881000062 14186288 AHMAD Inf Camomila 6(20x1.5g)N1PT",
+          "item_type": "",
+          "uom": "",
+          "quantity": "3",
+          "unit_price": "2.94",
+          "total": "8.82",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        }
+      ]
+    }
+  ],
+  "declined": []
+}

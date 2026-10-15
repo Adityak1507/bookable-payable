@@ -1,0 +1,142 @@
+{
+  "file": "DU-02.pdf",
+  "payables": [
+    {
+      "invoice_number": "554701215",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "37534.94",
+      "printed_gross": "37534.94",
+      "structure": "none/net",
+      "alternatives": [
+        [
+          "none/net",
+          "37534.94",
+          true
+        ]
+      ],
+      "notes": [
+        "pages [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20] restate the document in ['TRY']; the payable is in EUR",
+        "gross 37534.94: 'TOTAL:' = lines + taxes + charges − discount"
+      ],
+      "facts": [
+        {
+          "kind": "derived",
+          "message": "line 0: no unit price printed; 10.61 = printed total 21.22 / quantity 2",
+          "field": "line_items[0].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 2: no unit price printed; 30.466667 = printed total 91.40 / quantity 3",
+          "field": "line_items[2].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 3: no unit price printed; 1.45875 = printed total 11.67 / quantity 8",
+          "field": "line_items[3].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 4: no unit price printed; 1.35375 = printed total 10.83 / quantity 8",
+          "field": "line_items[4].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 6: no unit price printed; 3108.095 = printed total 6216.19 / quantity 2",
+          "field": "line_items[6].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 9: no unit price printed; 53.765 = printed total 107.53 / quantity 2",
+          "field": "line_items[9].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 14: no unit price printed; 232.725 = printed total 465.45 / quantity 2",
+          "field": "line_items[14].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 15: no unit price printed; 217.185 = printed total 434.37 / quantity 2",
+          "field": "line_items[15].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 16: no unit price printed; 1.23 = printed total 9.84 / quantity 8",
+          "field": "line_items[16].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 17: no unit price printed; 206.22 = printed total 412.44 / quantity 2",
+          "field": "line_items[17].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 18: no unit price printed; 78.7625 = printed total 630.10 / quantity 8",
+          "field": "line_items[18].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 19: no unit price printed; 381.313333 = printed total 2287.88 / quantity 6",
+          "field": "line_items[19].unit_price"
+        },
+        {
+          "kind": "derived",
+          "message": "line 20: no unit price printed; 228.12 = printed total 456.24 / quantity 2",
+          "field": "line_items[20].unit_price"
+        }
+      ],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no payment term evidence",
+        "po_id=∅: no PO printed"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr",
+    "3": "pp-ocr",
+    "4": "pp-ocr",
+    "5": "pp-ocr",
+    "6": "pp-ocr",
+    "7": "pp-ocr",
+    "8": "pp-ocr",
+    "9": "pp-ocr",
+    "10": "pp-ocr",
+    "11": "pp-ocr",
+    "12": "pp-ocr",
+    "13": "pp-ocr",
+    "14": "pp-ocr",
+    "15": "pp-ocr",
+    "16": "pp-ocr",
+    "17": "pp-ocr",
+    "18": "pp-ocr",
+    "19": "pp-ocr",
+    "20": "pp-ocr"
+  }
+}

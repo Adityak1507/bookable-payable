@@ -1,0 +1,55 @@
+{
+  "file": "INV-20.pdf",
+  "payables": [
+    {
+      "invoice_number": "20423591",
+      "pages": [
+        1,
+        2
+      ],
+      "reconciled": true,
+      "gross_inferred": false,
+      "booked": "12.1",
+      "printed_gross": "12.10",
+      "structure": "line/net",
+      "alternatives": [
+        [
+          "line/net",
+          "12.1",
+          true
+        ],
+        [
+          "header/net",
+          "12.1",
+          true
+        ],
+        [
+          "inclusive_line/inclusive",
+          "11.19",
+          false
+        ],
+        [
+          "none/net",
+          "11.19",
+          false
+        ]
+      ],
+      "notes": [
+        "gross 12.10: 'Amount due' = lines + taxes + charges − discount"
+      ],
+      "facts": [],
+      "master_data": [
+        "supplier_id=∅: no supplier match",
+        "buyer: no buyer match",
+        "payment_term_id=∅: no unique term for 20 days",
+        "po_id=∅: no PO printed",
+        "tax VAT 8.1%=CH_081_VAT: Switzerland VAT 8.1% (country CH)"
+      ]
+    }
+  ],
+  "notes": [],
+  "readers": {
+    "1": "pp-ocr",
+    "2": "pp-ocr"
+  }
+}

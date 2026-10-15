@@ -1,0 +1,69 @@
+{
+  "file": "INV-16.pdf",
+  "payables": [
+    {
+      "invoice_number": "TLLIR72836045",
+      "invoice_date": "2025-06-04",
+      "due_date": "",
+      "invoice_type": "INVOICE",
+      "currency": "EUR",
+      "supplier": {
+        "name": "Northwind OPERATIONS OU CWH",
+        "supplier_id": "",
+        "address": "",
+        "vat_id": ""
+      },
+      "buyer": {
+        "company_code": "",
+        "business_unit_code": "",
+        "location_code": ""
+      },
+      "payment_term_id": "",
+      "po_number": "",
+      "po_id": "",
+      "gross_total": "26.47",
+      "subtotal": "26.47",
+      "total_tax_amount": "",
+      "discount_amount": "",
+      "freight_charges": "",
+      "insurance_charges": "",
+      "extra_charges": "",
+      "excise_duties": "",
+      "taxes": [],
+      "line_items": [
+        {
+          "description": "6757799188 STK-EE003-25-00250 04-06-25 MHN, MANNHEIM WAW, WARSAW ECONOMY V A",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "23.02",
+          "total": "23.02",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        },
+        {
+          "description": "NORTOPERNATIONS OUE MANNHEIM Northwind OPERATIONS OU CWH SELECT FUEL SURCHARGE A Maria Haas Jonas Weber Gartenweg 6 Lindenstrasse 20",
+          "item_type": "",
+          "uom": "",
+          "quantity": "1",
+          "unit_price": "3.45",
+          "total": "3.45",
+          "discount": "",
+          "discount_percentage": "",
+          "tax_rate": "",
+          "tax_amount": "",
+          "taxes": []
+        }
+      ]
+    }
+  ],
+  "declined": [
+    {
+      "doc_type": "OTHER",
+      "reason": "page(s) 1: no payable content recognised on these pages"
+    }
+  ]
+}

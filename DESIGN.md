@@ -68,6 +68,8 @@ no lookup scans a whole master.
 
 **Where a model is used.** Only where it adds value and cannot do harm. Optionally (`--classifier ollama`), a small local model names the type of pages the reader declined as OTHER, choosing from a closed list enforced by a JSON schema. It never books a page and never touches an amount, and its answer is recorded in the audit. On the open set it named a form correctly, and it flagged two declined pages as invoices that the arithmetic could not yet read. That is a useful pointer, not a booking.
 
+**Optional repair** (`--repair groq,claude`, off by default). A model re-transcribes only the payables that still do not reconcile. It is never told which total to reach. Its reply is used only if every number in it is printed on the page and `erp_book` then reconciles it. On the four flagged documents nothing was accepted. Groq's text-only model invented a tax total, which the grounding gate rejected, and it could not make INV-37's non-footing page reconcile. That is the gate working as intended.
+
 **Why this generalises.** Every branch in the code is about the ERP's model or about accounting
 in general (tax on a base, a credit after tax, a copy of a page). None is about a document. The
 vocabulary file holds what "total", "VAT" and "credit note" are called across languages. A new

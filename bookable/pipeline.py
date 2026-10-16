@@ -50,9 +50,12 @@ class Pipeline:
     }
 
     def __init__(self, masters_dir: str, engine: str = "paddle", second_reader: str = "pp-hires", log=print,
-                 classifier=None):
+                 classifier=None, repairers=None, repair_dry_run=False):
         self.masters = Masters(masters_dir)
         self.classifier = classifier             # optional local model, only for pages declined as OTHER
+        self.repairers = list(repairers or [])   # optional repair chain, tried in order (repair.py)
+        self.repair_dry_run = repair_dry_run
+        self.planned: list[dict] = []
         self.engine = engine
         self.second_reader = second_reader if second_reader in self.SECOND_READERS else None
         self.log = log
@@ -110,8 +113,58 @@ class Pipeline:
                         audit["notes"].append(f"{label} re-read of pages {hard} did not improve; primary reading kept")
                 except Exception as e:                      # second reader is optional
                     audit["notes"].append(f"{label} unavailable: {type(e).__name__}: {e}")
+        if self.repairers:
+            self._repair(pdf, layouts, out, audit)
+        audit.pop("_irs", None)
         audit["readers"] = {pl.page_no: pl.source for pl in layouts}
         return out, audit
+
+    def _repair(self, pdf: str, layouts: list[PageLayout], out: dict, audit: dict) -> None:
+        """Send each payable that still does not reconcile to the repair model (see repair.py)."""
+        from . import repair
+        for k, (ap, ir) in enumerate(zip(audit["payables"], audit.get("_irs", []))):
+            if ap["reconciled"]:
+                continue
+            pages = ap["pages"]
+            tin, tout, usd = repair.estimate(len(pages))
+            if self.repair_dry_run:
+                self.planned.append({"file": out["file"], "pages": pages, "input_tokens": tin,
+                                     "output_tokens": tout, "usd": round(usd, 4)})
+                continue
+            current = {"lines": [{"description": li.description[:80], "quantity": _s(li.quantity),
+                                  "unit_price": _s(li.unit_price), "total": _s(li.total),
+                                  "tax_rate": _s(li.tax_rate)} for li in ir.lines],
+                       "taxes": [{"name": t.name, "rate": _s(t.rate), "amount": _s(t.amount)} for t in ir.tax_rows],
+                       "charges": [{"label": c.label, "amount": _s(c.amount)} for c in ir.charges]}
+            facts = ["the line items, taxes and charges above do not add up to any total printed on the page"]
+            facts += [f["message"] for f in ap["facts"] if f["kind"] in ("line_mismatch", "tax_base", "scale")]
+            texts = [_cells_text(pl) for pl in layouts if pl.page_no in pages]
+            printed = repair.printed_numbers([pl.text() for pl in layouts if pl.page_no in pages] + texts)
+            for provider in self.repairers:           # the chain: first grounded, reconciling reply wins
+                reply = provider.ask(pdf, pages, current, facts, page_texts=texts)
+                call = provider.calls[-1] if provider.calls else {}
+                tag = f"{provider.name} {call.get('request_id') or ''}".strip()
+                if reply is None:
+                    ap["notes"].append(f"repair [{tag}]: no usable reply ({call.get('error') or call.get('stop')})")
+                    continue
+                bad = repair.ungrounded(reply, printed)
+                if bad:
+                    ap["notes"].append(f"repair [{tag}] rejected: numbers not printed on the page {bad[:6]}")
+                    continue
+                new_ir = repair.to_ir(reply, ir)
+                r = solve(new_ir)
+                if not r.reconciled:
+                    ap["notes"].append(f"repair [{tag}] did not reconcile (books {r.booked} vs printed "
+                                       f"{r.target}); not used")
+                    continue
+                evidence = self.masters.resolve(new_ir, r.payable)
+                out["payables"][k] = r.payable
+                ap.update({"reconciled": True, "booked": str(r.booked), "printed_gross": str(r.target),
+                           "structure": r.chosen, "alternatives": r.alternatives,
+                           "facts": [asdict(f) for f in r.facts], "master_data": evidence})
+                ap["notes"].append(f"repaired by {call.get('model')} [{tag}]: {reply.get('notes', '')} "
+                                   f"(grounded, re-verified by erp_book)")
+                break
 
     def _solve_file(self, name: str, infos: list[PageInfo]) -> tuple[dict, dict]:
         groups, declined = assemble.split(infos, name)
@@ -137,6 +190,7 @@ class Pipeline:
                 continue
             evidence = self.masters.resolve(ir, r.payable)
             out["payables"].append(r.payable)
+            audit.setdefault("_irs", []).append(ir)
             audit["payables"].append({
                 "invoice_number": ir.invoice_number, "pages": ir.pages, "reconciled": r.reconciled,
                 "gross_inferred": ir.gross_inferred,
@@ -154,3 +208,14 @@ class Pipeline:
     def _better(a: dict, b: dict) -> bool:
         score = lambda x: (sum(p["reconciled"] for p in x["payables"]), len(x["payables"]))  # noqa: E731
         return score(a) > score(b)
+
+
+def _s(v) -> str | None:
+    return None if v is None else str(v)
+
+
+def _cells_text(pl: PageLayout) -> str:
+    """A page as rows of '|'-separated cells, for a text-only repair model."""
+    from .understand import cells_of
+    rows = [" | ".join(c.text for c in cells_of(ln)) for ln in pl.lines()]
+    return f"[page {pl.page_no}]\n" + "\n".join(rows)

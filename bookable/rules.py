@@ -29,7 +29,7 @@ def covers(*rule_ids: str):
 
 def load_all() -> dict[str, tuple[str, str]]:
     """Import every module that registers rules, and return the catalogue."""
-    from . import assemble, llm_classify, masters, solve, understand  # noqa: F401
+    from . import assemble, llm_classify, masters, repair, solve, understand  # noqa: F401
     from .ocr import readers  # noqa: F401
     from .reading import cells, classify, fields, items, summary  # noqa: F401
     return RULES

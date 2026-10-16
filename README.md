@@ -22,6 +22,8 @@ structure was chosen and why, the arithmetic facts behind it, and the master-dat
 | `--second-reader pp-hires\|got\|none` | `pp-hires` | re-read pages whose payable does not reconcile (PP-OCR at 300 dpi, or GOT-OCR 2.0) |
 | `--only STEM ...` | all | process only some files |
 | `--classifier ollama[:model]` | off | optional local model (via a running Ollama) that names the type of pages declined as OTHER; it never books or changes amounts |
+| `--repair groq,claude` | off | optional repair chain for payables that still do not reconcile; a model re-transcribes the pages, and the reply is used only if every number is printed on the page and `erp_book` reconciles it. Keys: `GROQ_API_KEY` / `ANTHROPIC_API_KEY` in the environment or a git-ignored `.env`; install `requirements-api.txt` for Claude |
+| `--repair-dry-run` | off | show which payables `--repair` would send, and the estimated cost, without calling any API |
 
 OCR results are cached in `.cache/` (keyed by file hash, engine and page), so re-runs are fast.
 `BOOKABLE_OCR_BACKEND=onnx|torch` picks the PP-OCR backend. The default is torch when PyTorch is

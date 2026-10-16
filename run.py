@@ -38,6 +38,11 @@ def main() -> int:
                     help="re-read pages whose payable does not reconcile (default: PP-OCR at 300 dpi)")
     ap.add_argument("--no-second-reader", action="store_true", help="same as --second-reader none")
     ap.add_argument("--only", nargs="*", help="process only these file stems")
+    ap.add_argument("--repair", default="",
+                    help="optional repair chain for payables that still do not reconcile, tried in order, "
+                         "e.g. 'groq,claude' (needs GROQ_API_KEY / ANTHROPIC_API_KEY, in the environment or .env)")
+    ap.add_argument("--repair-dry-run", action="store_true",
+                    help="list what --repair would send and its estimated cost, without calling the API")
     ap.add_argument("--classifier", default="", help="optional local model for pages declined as OTHER, "
                     "e.g. ollama or ollama:qwen2.5-coder:7b (needs a running Ollama server)")
     a = ap.parse_args()
@@ -54,8 +59,17 @@ def main() -> int:
         from bookable.llm_classify import LocalClassifier
         model = a.classifier.split(":", 1)[1] if ":" in a.classifier else "qwen2.5-coder:7b"
         clf = LocalClassifier(model)
+    repairers = []
+    for name in [n.strip() for n in a.repair.split(",") if n.strip()]:
+        from bookable import repair as rp
+        cls, key = {"groq": (rp.GroqRepair, "GROQ_API_KEY"), "claude": (rp.ClaudeRepair, "ANTHROPIC_API_KEY")}[name]
+        if not a.repair_dry_run and not rp.load_key(key):
+            print(f"--repair {name} needs {key} (environment or .env); skipping it", file=sys.stderr)
+            continue
+        repairers.append(cls())
     pipe = Pipeline(a.masters, engine=a.engine,
-                    second_reader="none" if a.no_second_reader else a.second_reader, classifier=clf)
+                    second_reader="none" if a.no_second_reader else a.second_reader, classifier=clf,
+                    repairers=repairers, repair_dry_run=a.repair_dry_run)
 
     summary = []
     for pdf in pdfs:
@@ -76,6 +90,17 @@ def main() -> int:
                 f"reconciled={sum(bool(r) for r in rec)}/{len(rec)}  ({time.time() - t0:.1f}s)")
         print(line, flush=True)
         summary.append(line)
+    if pipe.planned:
+        total = sum(p["usd"] for p in pipe.planned)
+        print(f"\nrepair dry run: {len(pipe.planned)} call(s), estimated ${total:.2f}")
+        for p in pipe.planned:
+            print(f"  {p['file']:12} pages {p['pages']}  ~{p['input_tokens']} in / {p['output_tokens']} out  ~${p['usd']}")
+    for r in repairers:
+        if r.calls:
+            tin = sum(c.get("input_tokens", 0) for c in r.calls)
+            tout = sum(c.get("output_tokens", 0) for c in r.calls)
+            errors = sum(1 for c in r.calls if "error" in c)
+            print(f"repair [{r.name}]: {len(r.calls)} call(s), {errors} error(s), {tin} input / {tout} output tokens")
     return 0
 
 
